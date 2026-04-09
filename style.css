@@ -1,0 +1,676 @@
+/* ================= HOME ================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6ff;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+}
+
+nav h2 {
+    color: #6C63FF;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+    border-radius: 20px;
+    margin: 20px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    overflow: hidden;
+}
+
+/* OVERLAY SHAPE */
+.overlay {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.3), transparent);
+    top: -50px;
+    left: -50px;
+}
+
+/* HERO TEXT */
+.hero-text {
+    color: white;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text p {
+    margin: 15px 0;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #5a54e8;
+    color: white;
+    cursor: pointer;
+}
+
+/* HERO IMAGE */
+.hero-img img {
+    width: 260px;
+    border-radius: 50%;
+    border: 8px solid rgba(255,255,255,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* SKILLS */
+.skills {
+    padding: 60px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skill-box {
+    display: flex;
+    gap: 20px;
+}
+
+/* SKILL CARD */
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* PROJECT */
+.projects {
+    padding: 60px;
+}
+
+.project-card {
+    display: flex;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 220px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* IMAGE PROJECT */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card h4 {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.card button {
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT WRAPPER */
+.about {
+    position: relative;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 20px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* SHAPE KANAN ATAS */
+.bg-shape {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #6C63FF, #A084FF);
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+/* WAVE BAWAH */
+.bg-wave {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    border-radius: 50% 50% 0 0;
+    opacity: 0.15;
+}
+
+/* FIX CONTAINER DI ATAS SHAPE */
+.about-container,
+.skills,
+.experience {
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= PROJECT PAGE ================= */
+
+.projects-page {
+    position: relative;
+    margin: 20px;
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* BACKGROUND SHAPE */
+.project-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    border-radius: 20px 20px 50% 50%;
+    opacity: 0.2;
+}
+
+/* TITLE */
+.projects-page h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #5a54e8;
+    position: relative;
+}
+
+/* FILTER */
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.filter .active {
+    background: linear-gradient(135deg, #6C63FF, #5a54e8);
+    color: white;
+}
+
+/* GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* IMAGE */
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* BUTTON */
+.project-card button {
+    margin: 15px 0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    color: white;
+    cursor: pointer;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column; /* INI KUNCI 🔥 */
+}
+
+/* IMAGE */
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.project-content {
+    padding: 15px;
+    text-align: center; /* biar tengah */
+}
+
+/* TEXT */
+.project-content h3 {
+    margin-bottom: 8px;
+}
+
+.project-content p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-page {
+    position: relative;
+    margin: 20px;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.gallery-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #FF6584, #6C63FF, #00C9A7);
+    border-radius: 20px 20px 50% 50%;
+    opacity: 0.25;
+}
+
+.gallery-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5a54e8;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-page {
+    position: relative;
+    margin: 20px;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.contact-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7, #FF6584);
+    border-radius: 20px 20px 50% 50%;
+    opacity: 0.25;
+}
+
+.contact-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5a54e8;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+}
+
+/* FORM */
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input,
+.form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form textarea {
+    height: 100px;
+}
+
+.form button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    color: white;
+    cursor: pointer;
+}
+
+/* INFO */
+.info-box {
+    flex: 1;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #6C63FF;
+    font-weight: 500;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+/* ================= BUBBLES BACKGROUND ================= */
+
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    animation: float 20s linear infinite;
+}
+
+/* warna & ukuran beda-beda */
+.bubbles span:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    background: rgba(108,99,255,0.2);
+}
+
+.bubbles span:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    background: rgba(0,201,167,0.2);
+    animation-duration: 25s;
+}
+
+.bubbles span:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    background: rgba(255,101,132,0.2);
+}
+
+.bubbles span:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    left: 70%;
+    background: rgba(108,99,255,0.15);
+}
+
+.bubbles span:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    left: 85%;
+    background: rgba(0,201,167,0.15);
+}
+
+/* animasi naik */
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(1);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1.2);
+    }
+}
+
+/* ANIMASI FILTER */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card.hide {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.filter button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter button.active {
+    background: linear-gradient(135deg, #6C63FF, #00C9A7);
+    color: white;
+}
+
+.filter button:hover {
+    transform: scale(1.05);
+}
+
+/* ================= ABOUT ================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7ff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+}
+
+/* ABOUT SECTION */
+.about {
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffffff, #f0f2ff);
+}
+
+/* CONTAINER */
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* IMAGE */
+.about-img img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.about-text h1 {
+    color: #6C63FF;
+}
+
+.about-text h3 {
+    margin: 10px 0;
+}
+
+.about-text p {
+    color: #666;
+}
+
+/* INFO */
+.info {
+    margin-top: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* SKILLS */
+.skills {
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BAR */
+.bar {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* FILL */
+.fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.html {
+    width: 75%;
+    background: linear-gradient(90deg, #6C63FF, #00C9A7);
+}
+
+.css {
+    width: 75%;
+    background: linear-gradient(90deg, #6C63FF, #00C9A7);
+}
+
+.js {
+    width: 95%;
+    background: linear-gradient(90deg, #6C63FF, #00C9A7);
+}
+
+/* EXPERIENCE */
+.experience {
+    margin-top: 40px;
+}
+
+.exp-box {
+    display: flex;
+    gap: 20px;
+}
+
+.exp-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
